@@ -13,7 +13,9 @@
 
 <xsl:template match="order" mode="url-content">
     <xsl:apply-templates select="ask" mode="order"></xsl:apply-templates>
-    <xsl:text>Another Text</xsl:text>
+    <xsl:if test="loli-pop">
+        <xsl:text>Another Text</xsl:text>
+    </xsl:if>
 </xsl:template>
 
 </xsl:stylesheet>

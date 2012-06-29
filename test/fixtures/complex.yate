@@ -10,7 +10,9 @@ match order {
 
 match order url-content {
     apply ask order
-    "Another Text"
+    if loli-pop {
+        "Another Text"
+    }
 }
 
 
