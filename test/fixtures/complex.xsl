@@ -12,6 +12,7 @@
 </xsl:template>
 
 <xsl:template match="order" mode="url-content">
+    <xsl:apply-templates select="ask" mode="order"></xsl:apply-templates>
     <xsl:text>Another Text</xsl:text>
 </xsl:template>
 
