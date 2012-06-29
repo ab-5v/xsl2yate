@@ -1,0 +1,34 @@
+{
+    "name": "xsl2yate",
+    "version": "0.0.1",
+    "description": "converts xsl templates to yate",
+    "keywords": [
+        "xsl",
+        "xslt",
+        "yate",
+        "helper",
+        "template"
+    ],
+    "author": {
+        "name": "Artur Burtsev",
+        "email": "artjock@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/artjock/xslt2yate.git"
+    },
+    "main": "./index",
+    "bin": {
+        "xsl2yate": "./bin/xsl2yate"
+    },
+    "engines": {
+        "node": ">= 0.6.0"
+    },
+    "scripts": {
+        "test": "make test"
+    },
+    "devDependencies": {
+        "mocha": "*",
+        "should": "*"
+    }
+}
