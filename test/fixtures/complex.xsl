@@ -8,6 +8,17 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template match="order">
+    <xsl:choose>
+        <xsl:when test="loli">
+            <xsl:apply-templates select="pop" mode="lolipop"/>
+        </xsl:when>
+        <xsl:when test="loli-poli">
+            <xsl:text>some</xsl:text>
+        </xsl:when>
+        <xsl:otherwise>
+            <xsl:text>none</xsl:text>
+        </xsl:otherwise>
+    </xsl:choose>
     <xsl:text>Text</xsl:text>
 </xsl:template>
 
