@@ -7,3 +7,6 @@
 
 <!-- another
      multiline -->
+
+<!--xsl:apply-templates select="labels-actions" mode="block"/>
+<xsl:apply-templates select="abook-extra-actions" mode="block"/-->
