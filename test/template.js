@@ -34,4 +34,20 @@ describe('template', function() {
             done();
         });
     });
+
+    it('xsl:template@name', function(done) {
+        compare('template-name', function(err, src, res) {
+            should.not.exist(err);
+            src.should.equal(res);
+            done();
+        });
+    });
+
+    it('xsl:template@name oneline', function(done) {
+        compare('template-name-oneline', function(err, src, res) {
+            should.not.exist(err);
+            src.should.equal(res);
+            done();
+        });
+    });
 });
