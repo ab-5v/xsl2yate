@@ -7,6 +7,10 @@
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+<xsl:include href="../some/template.xsl"/>
+
+<xsl:template name="opera"/>
+
 <xsl:template match="order">
     <xsl:choose>
         <xsl:when test="loli">
@@ -20,6 +24,11 @@
         </xsl:otherwise>
     </xsl:choose>
     <xsl:text>Text</xsl:text>
+    <div>
+        <xsl:attribute name="class">
+            <xsl:text>someClass</xsl:text>
+        </xsl:attribute>
+    </div>
 </xsl:template>
 
 <xsl:template match="order" mode="url-content">

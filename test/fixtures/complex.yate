@@ -4,6 +4,10 @@
 
 
 
+include "../some/template.xsl"
+
+func opera() {}
+
 match order {
     
         if loli {
@@ -17,6 +21,11 @@ match order {
         }
     
     "Text"
+    <div>
+        @class = (
+            "someClass"
+        )
+    </div>
 }
 
 match order url-content {
