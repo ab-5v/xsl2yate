@@ -1,6 +1,6 @@
 {
     "name": "xsl2yate",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "converts xsl templates to yate",
     "keywords": [
         "xsl",

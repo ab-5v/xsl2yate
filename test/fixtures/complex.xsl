@@ -37,6 +37,7 @@
     <xsl:apply-templates select="ask" mode="order"></xsl:apply-templates>
     <xsl:if test="loli-pop">
         <xsl:text>Another Text</xsl:text>
+        <xsl:variable name="var" select="lolo"/>
     </xsl:if>
 </xsl:template>
 

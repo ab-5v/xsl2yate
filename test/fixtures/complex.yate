@@ -34,6 +34,7 @@ match order url-content {
     apply ask order
     if loli-pop {
         "Another Text"
+        var = lolo
     }
 }
 
