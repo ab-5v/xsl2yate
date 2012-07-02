@@ -33,6 +33,7 @@
 </xsl:template>
 
 <xsl:template match="order" mode="url-content">
+    <xsl:value-of select="noop"/>
     <xsl:apply-templates select="ask" mode="order"></xsl:apply-templates>
     <xsl:if test="loli-pop">
         <xsl:text>Another Text</xsl:text>
