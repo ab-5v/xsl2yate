@@ -9,6 +9,7 @@
 
 <xsl:include href="../some/template.xsl"/>
 
+<!-- Some comment -->
 <xsl:template name="opera"/>
 
 <xsl:template match="order">

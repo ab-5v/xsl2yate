@@ -6,6 +6,7 @@
 
 include "../some/template.yate"
 
+/* Some comment */
 func opera() {}
 
 match order {
