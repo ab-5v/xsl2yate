@@ -4,7 +4,7 @@
 
 
 
-include "../some/template.xsl"
+include "../some/template.yate"
 
 func opera() {}
 
