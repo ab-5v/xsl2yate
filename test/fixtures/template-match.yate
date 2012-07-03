@@ -1,2 +1,2 @@
-match color-theme {
+match .color-theme {
 }

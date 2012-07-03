@@ -1,1 +1,1 @@
-key emails (/*/emails/email, concat(login, '@', domain)) { . }
+key emails (/.*.emails.email, concat(.login, '@', .domain)) { . }

@@ -9,12 +9,12 @@ include "../some/template.yate"
 /* Some comment */
 func opera() {}
 
-match order {
+match .order {
     
-        if loli {
-            apply pop lolipop
+        if .loli {
+            apply .pop lolipop
         }
-        else if loli-poli {
+        else if .loli-poli {
             "some"
         }
         else {
@@ -29,12 +29,12 @@ match order {
     </div>
 }
 
-match order url-content {
-    noop
-    apply ask order
-    if loli-pop {
+match .order url-content {
+    .noop
+    apply .ask order
+    if .loli-pop {
         "Another Text"
-        var = lolo
+        var = .lolo
     }
 }
 

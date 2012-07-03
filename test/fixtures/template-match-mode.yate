@@ -1,2 +1,2 @@
-match color-theme preview {
+match .color-theme preview {
 }
