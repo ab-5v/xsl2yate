@@ -43,4 +43,10 @@ describe('jpath', function() {
     it('*/* -> .*.*', function() {
         jpath('*/*').should.equal('.*.*');
     });
+    it('$a -> a', function() {
+        jpath('$a').should.equal('a');
+    });
+    it('$foo/bar -> foo.bar', function() {
+        jpath('$foo/bar').should.equal('foo.bar');
+    });
 });
