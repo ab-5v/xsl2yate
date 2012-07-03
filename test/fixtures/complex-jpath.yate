@@ -1,0 +1,24 @@
+
+
+
+    key filter-field (/.page.filters.filters-data.fields.item, .value) { . }
+
+    key attachment (/.*.message-body.attachments.attachment[.inline], .cid) { . }
+
+    attachment = attachments.attachment[!(.inline) && (string(.name) || .message)]
+
+    param-extra-cond = params.extra_cond
+
+    label-current = labels(param-label)
+
+    wait = labels.label[.name == 'about:blank']
+
+    message-id = /.*.message.id | /.attached-message.params.ids | /.message-attachments.mid
+
+    folder-1lvl-nested = count(folders.folder[.user]) > 1
+
+    folder-draft = folders('draft')
+    folder-draft-id = folder-draft.id
+
+
+

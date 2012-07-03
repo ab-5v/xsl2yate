@@ -1,4 +1,6 @@
+TESTS=test/*.js
+
 test:
-	mocha --require should --reporter spec test/*.js
+	mocha --require should --reporter spec $(TESTS)
 
 .PHONY: test
