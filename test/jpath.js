@@ -49,4 +49,13 @@ describe('jpath', function() {
     it('$foo/bar -> foo.bar', function() {
         jpath('$foo/bar').should.equal('foo.bar');
     });
+    it('foo/@bar -> foo.bar', function() {
+        jpath('foo/@bar').should.equal('.foo.bar');
+    });
+    it('@bar -> .bar', function() {
+        jpath('@bar').should.equal('.bar');
+    });
+    it('$foo/@bar -> foo.bar', function() {
+        jpath('$foo/bar').should.equal('foo.bar');
+    });
 });
