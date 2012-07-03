@@ -2,7 +2,7 @@ var should = require('should');
 var jpath = require('../').jpath;
 
 
-describe('jpath', function() {
+describe('jpath operators', function() {
     it('$a | $b -> a | b', function() {
         jpath('$a | $b').should.equal('a | b');
     });
