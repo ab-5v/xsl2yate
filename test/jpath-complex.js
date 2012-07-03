@@ -22,5 +22,8 @@ describe('jpath complex', function() {
     it('18n(\'Folders_Unread\', new)', function() {
         jpath('18n(\'Folders_Unread\', new)').should.equal('18n(\'Folders_Unread\', .new)')
     });
+    it('string-length(new)', function() {
+        jpath('string-length(new)').should.equal('string-length(.new)')
+    });
 });
 
