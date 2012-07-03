@@ -9,6 +9,9 @@ describe('jpath operators', function() {
     it('$a + $b -> a + b', function() {
         jpath('$a + $b').should.equal('a + b');
     });
+    it('$a - $b -> a - b', function() {
+        jpath('$a - $b').should.equal('a - b');
+    });
     it('$a div $b', function() {
         jpath('$a div $b').should.equal('a / b');
     });
