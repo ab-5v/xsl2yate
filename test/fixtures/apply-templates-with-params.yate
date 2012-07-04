@@ -1,0 +1,4 @@
+apply .some mode (
+    .val1,
+    .val2,
+)

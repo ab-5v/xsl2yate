@@ -10,5 +10,12 @@ describe('apply-templates', function() {
             done();
         });
     });
+    it('with-param', function(done) {
+        compare('apply-templates-with-params', function(err, src, res) {
+            should.not.exist(err);
+            src.should.equal(res);
+            done();
+        });
+    });
 });
 

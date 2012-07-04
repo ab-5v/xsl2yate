@@ -10,5 +10,12 @@ describe('xsl:call-temaplte', function() {
             done();
         });
     });
+    it('with-param', function(done) {
+        compare('call-template-with-params', function(err, src, res) {
+            should.not.exist(err);
+            src.should.equal(res);
+            done();
+        });
+    });
 });
 
