@@ -13,11 +13,9 @@ match .order {
     
         if .loli {
             apply .pop lolipop
-        }
-        else if .loli-poli {
+        } else if .loli-poli {
             "some"
-        }
-        else {
+        } else {
             "none"
         }
     
