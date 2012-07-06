@@ -1,4 +1,5 @@
 var should = require('should');
+var compare = require('./util/compare');
 var tr = require('../').transform;
 var bea = require('../lib/bea');
 
@@ -29,5 +30,12 @@ describe('bea', function() {
         bea('}\n     else').should.eql('} else');
     });
 
+    it('complex', function(done) {
+        compare('complex-bea', function(err, src, res) {
+            should.not.exist(err);
+            src.should.equal(res);
+            done();
+        });
+    });
 });
 
