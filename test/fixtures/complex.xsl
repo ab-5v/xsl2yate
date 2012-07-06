@@ -38,6 +38,10 @@
     <xsl:if test="loli-pop">
         <xsl:text>Another Text</xsl:text>
         <xsl:variable name="var" select="lolo"/>
+        <xsl:for-each select="key('folders', $id)/sub">
+            <xsl:text>full: </xsl:text>
+            <xsl:value-of select="name[ rang &gt; 2 ]/full"/>
+        </xsl:for-each>
     </xsl:if>
 </xsl:template>
 

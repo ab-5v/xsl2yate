@@ -33,6 +33,9 @@ match .order url-content {
     if .loli-pop {
         "Another Text"
         var = .lolo
+        for folders(id).sub {
+            "full: {.name[ .rang > 2 ].full}"
+        }
     }
 }
 

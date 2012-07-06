@@ -35,9 +35,13 @@ describe('bea', function() {
             .should.eql('<div class="b-mail-pager__label">{.name}</div>');
     });
 
-    it('\n    "var"\n    .id\n', function() {
+    it('\\n    "var"\\n    .id\\n', function() {
         tr('\n    "var"\n    .id\n')
             .should.eql('\n    "var{.id}"\n');
+    });
+
+    it('.items[ .index ]/.item -> .items[ .index ].item', function() {
+        tr('.items[ .index ]/.item').should.equal('.items[ .index ].item');
     });
 
     it('complex', function(done) {
