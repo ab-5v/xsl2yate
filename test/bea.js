@@ -35,6 +35,11 @@ describe('bea', function() {
             .should.eql('<div class="b-mail-pager__label">{.name}</div>');
     });
 
+    it('\n    "var"\n    .id\n', function() {
+        tr('\n    "var"\n    .id\n')
+            .should.eql('\n    "var{.id}"\n');
+    });
+
     it('complex', function(done) {
         compare('complex-bea', function(err, src, res) {
             should.not.exist(err);
