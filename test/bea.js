@@ -30,6 +30,11 @@ describe('bea', function() {
         bea('}\n     else').should.eql('} else');
     });
 
+    it('>.name<', function() {
+        tr('<div class="b-mail-pager__label">.name</div>')
+            .should.eql('<div class="b-mail-pager__label">{.name}</div>');
+    });
+
     it('complex', function(done) {
         compare('complex-bea', function(err, src, res) {
             should.not.exist(err);
