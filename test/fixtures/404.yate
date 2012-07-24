@@ -1,0 +1,37 @@
+
+
+
+
+
+
+/* ############################################################################################################## */
+
+match ._404 block-content {
+<div class="b-404">
+    <div class="b-404__title">{i18n('%Error_Несуществующая_страница')}</div>
+    <div class="b-404__p">{i18n('%Error_Страница_не_существует')}</div>
+    <div class="b-404__p">{i18n('%Error_Проверьте_адрес')}</div>
+    <div class="b-404__p">
+        <a class="b-404__action daria-action" href="#" data-action="common.back">{i18n('%Вернуться')}</a>
+        " · "
+        <a class="b-404__action" href="#compose">{i18n('%Message_Написать_письмо')}</a>
+        " · "
+        <a class="b-404__action" href="#inbox">{i18n('%Error_Перейти_во_входящие')}</a>
+    </div>
+    <div class="b-404__teasers">
+        <div class="b-404__teaser">
+            i18n('%Error_Рекомендуем_настроить_почту')
+        </div>
+        if locale == 'ru' {
+            <div class="b-404__teaser">
+                i18n('%Error_Узнать_о_функциях')
+                <a class="b-404__action" href="/menu/" target="_blank">
+                    <img class="b-mail-icon b-mail-icon_to-menu" alt="" src="&b-mail-icon_to-menu.png;"/>
+                </a>
+            </div>
+        }
+    </div>
+</div>
+}
+
+
