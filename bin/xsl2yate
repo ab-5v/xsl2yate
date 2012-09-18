@@ -3,7 +3,7 @@
 var xslt2yate = require('../');
 
 if (process.argv.length < 3) {
-    console.log('Usage: requirer src.xslt dest.yate');
+    console.log('Usage: xsl2yate src.xslt dest.yate');
 } else {
     xslt2yate.do.apply(xslt2yate, process.argv.slice(2));
 }
